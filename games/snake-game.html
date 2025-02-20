@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digitalkern - Snake 555 Game</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <script src="../assets/js/easterminimize.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="window-controls">
+            <span class="window-label">snake-555-game.exe</span>
+            <a class="window-button minimize" href="javascript:minimizeContainer()">➖</a>
+            <a class="window-button maximize" href="../eastereggs/fire-image.html">⬜</a>
+            <a class="window-button close" href="../team/michaelkozintsev.html">✖</a>
+        </div>
+        <div class="snake-game-container">
+            <canvas id="snake-game-canvas" class="snake-game-canvas" width="400" height="400"></canvas>
+            <div class="snake-game-controls">
+                <p>On desktop use arrow keys to move the snake.</p>
+                <p>On mobile, swipe to move the snake.</p>
+                <a onclick="location.reload()" style="color: gainsboro;">Restart Game</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-file hidden">
+        <a href="javascript:maximizeContainer()" style="text-decoration: none;">
+            <span class="file-icon" style="font-size:5vh">💻</span>
+            <p>snake-555-game.exe</p>
+        </a>
+    </div>
+    <script src="../assets/js/snake-game.js"></script>
+</body>
+</html>

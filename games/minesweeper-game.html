@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digitalkern - Minesweeper 111 Game</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <script src="../assets/js/easterminimize.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="window-controls" style="margin-bottom: 10px;">
+            <a class="window-label">minesweeper-111-game.exe</a>
+            <a class="window-button minimize" href="javascript:minimizeContainer()">➖</a>
+            <a class="window-button maximize" href="../eastereggs/wrong-elevator?.png">⬜</a>
+            <a class="window-button close" href="../team/rebeccabooth.html">✖</a>
+        </div>
+        <div class="minesweeper-game-container">
+            <div id="minesweeper-game-board" class="minesweeper-game-board"></div>
+            <div class="minesweeper-game-controls">
+                <p>Click on the cells to reveal them. Right-click to flag a mine.</p>
+                <a onclick="location.reload()" style="color: gainsboro;">Restart Game</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-file hidden">
+        <a href="javascript:maximizeContainer()" style="text-decoration: none;">
+            <span class="file-icon" style="font-size:5vh">💻</span>
+            <p>minesweeper-111-game.exe</p>
+        </a>
+    </div>
+    <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></canvas>
+    <script src="../assets/js/minesweeper-game.js"></script>
+</body>
+</html>
