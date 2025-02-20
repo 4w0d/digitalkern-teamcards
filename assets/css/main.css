@@ -330,22 +330,42 @@ a:active {
     z-index: 1000;
 }
 
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
 
     body {
-        margin-top: 1%;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-
     .container,
-    .profile-card,
-    .minesweeper-game-container,
-    .snake-game-container {
+    .profile-card {
+        height: 90%;
         width: 90%;
         margin: 0 auto;
         padding: 10px;
+    }
+
+    .minesweeper-game-container,
+    .snake-game-container {
+        margin: 0 auto;
+        padding: 10px;
+        height: 90%;
+        width: 90%;
     }
 
     .window-button {
@@ -372,6 +392,15 @@ a:active {
     .snake-game-canvas {
         max-width: 90%;
         max-height: 90%;
+    }
+
+    .picture {
+        width: 80%;
+        height: auto;
+    }
+
+    .id, .membername, .links a {
+        font-size: 1.2vh;
     }
 }
 
