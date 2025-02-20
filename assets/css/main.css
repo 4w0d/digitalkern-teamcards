@@ -37,6 +37,21 @@ strong {
     flex: 1;
 }
 
+.snake-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -107,8 +122,6 @@ a:active {
 }
 
 .picture {
-    height: auto;
-    max-height:50%;
     border-radius: 20px;
     flex-shrink: 1;
     transition: transform 0.3s;
@@ -134,6 +147,7 @@ a:active {
     align-items: center;
     justify-content: bottom;
     background-color: #444;
+    max-height: fit-content;
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
@@ -238,21 +252,6 @@ a:active {
     transition: transform 0.2s;
 }
 
-.snake-game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    width: auto;
-    background-color: #444;
-    color: white;
-    padding: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .snake-game-canvas {
     background-color: #222;
     border: 1px solid #555;
@@ -325,6 +324,43 @@ a:active {
     border-radius: 10px;
     font-size: 2em;
     z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .container,
+    .profile-card,
+    .minesweeper-game-container,
+    .snake-game-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .window-button {
+        font-size: 2vh;
+    }
+
+    .minesweeper-game-board {
+        grid-template-columns: repeat(10, 28px);
+        grid-template-rows: repeat(10, 28px);
+    }
+
+    .minesweeper-game-board div {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .win-message,
+    .lose-message {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    .snake-game-canvas {
+        max-width: 90%;
+        max-height: 90%;
+    }
 }
 
 .lose-message {
