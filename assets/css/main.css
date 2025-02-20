@@ -12,6 +12,10 @@ html, body {
     overflow: hidden;
 }
 
+body {
+    display: flex;
+}
+
 strong {
     font-weight: 700;
 }
@@ -327,6 +331,14 @@ a:active {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        margin-top: 1%;
+        width: auto;
+        height: auto;
+    }
+
+
     .container,
     .profile-card,
     .minesweeper-game-container,
