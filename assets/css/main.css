@@ -354,7 +354,7 @@ a:active {
 
     .container,
     .profile-card {
-        height: 90%;
+        height: auto;
         width: 90%;
         margin: 0 auto;
         padding: 10px;
